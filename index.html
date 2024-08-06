@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LingoLabs</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="signup" style="white-space: pre;">Sign up for early access. <a id="fiftyoff">50% off</a> if you do:   <form id="eform">
+          <input type="text" id="e" name="e" placeholder="Enter your email here...">
+        </form><button id="submit" style="white-space: normal;">➜</button>
+      </div>
+    </div>
+    <main>
+        <!-- <div class="nav">
+            <a href="/" class="navitem">Home</a>
+            <a href="/" class="navitem">Pricing</a>
+            <a href="/" class="navitem" style="margin-right: 0px;">Product</a> rerun live server
+        </div> -->
+        <div class="maincontainer">
+          <div class="mainlogo">
+              <img id="mainlogoimg" src="favicon.png">
+              <a id="mainlogo_text" class="typewriter"></a>
+          </div>
+          <div class="quote">
+            <a id="quotetext">A new way to learn a language!</a>
+            <a id="quotearrow" href="https://google.com" target="_blank">Go</a><img src="arrow-up-right.png" style="margin-right: 18px; display: inline-block; width: 14px; height: 14px; align-self: center; margin-left: 3px; transform: rotate(-15deg);">
+          </div>
+        </div>
+    </main>
+    <div>
+      <div class="container">
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/bar-chart.png" alt="Transport & Logistics">
+            <h3>Transport & Logistics</h3>
+            <p>We help your Business Seize Advantage through Innovation. We work with you to exploit new things.</p>
+        </div>
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/bar-chart.png" alt="Corporate Finance">
+            <h3>Corporate Finance</h3>
+            <p>We help your Business Seize Advantage through Innovation. We work with you to exploit new things.</p>
+        </div>
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/business.png" alt="Strategic & Planning">
+            <h3>Strategic & Planning</h3>
+            <p>We help your Business Seize Advantage through Innovation. We work with you to exploit new things.</p>
+        </div>
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/diamond.png" alt="Digital Transform">
+            <h3>Digital Transform</h3>
+            <p>We help your Business Seize Advantage through Innovation. We work with you to exploit new things.</p>
+        </div>
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/network.png" alt="Network Operation">
+            <h3>Network Operation</h3>
+            <p>We help your Business Seize Advantage through Innovation. We work with you to exploit new things.</p>
+        </div>
+        <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/000000/business.png" alt="Business Analytics">
+            <h3>Business Analytics</h3>
+            <p>We help your Business Seize Advantage through Innovation. We work with you to exploit new things.</p>
+        </div>
+    </div>
+      <div class="what">
+        <a id="whatBOLD">What is LingoLabs?</a>
+        <p id="whatTEXT">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id lectus in nulla tristique venenatis. Vivamus dictum non ipsum quis gravida. Integer tincidunt pharetra volutpat. Donec tincidunt efficitur ligula, nec ultricies elit euismod eleifend. In congue velit in consequat vestibulum. Donec suscipit tempor velit, consectetur aliquam eros ultrices a. Pellentesque et tellus erat. Praesent quis euismod nisl, nec semper eros. Duis vitae diam semper mauris pellentesque ultricies vel vel risus. Praesent volutpat, augue a interdum finibus, ex tortor laoreet neque, consequat fringilla ligula arcu eget dui. Fusce aliquet a dui sit amet interdum.
+        </p>
+      </div>
+      <div class="why">
+        <p id="whyTEXT">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id lectus in nulla tristique venenatis. Vivamus dictum non ipsum quis gravida. Integer tincidunt pharetra volutpat. Donec tincidunt efficitur ligula, nec ultricies elit euismod eleifend. In congue velit in consequat vestibulum. Donec suscipit tempor velit, consectetur aliquam eros ultrices a. Pellentesque et tellus erat. Praesent quis euismod nisl, nec semper eros. Duis vitae diam semper mauris pellentesque ultricies vel vel risus. Praesent volutpat, augue a interdum finibus, ex tortor laoreet neque, consequat fringilla ligula arcu eget dui. Fusce aliquet a dui sit amet interdum.
+        </p>
+        <a id="whyBOLD">Why us?</a>
+      </div>
+    </div>
+    <script>
+      document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+      var i = 0;
+      var txt = 'LingoLabs'; /* The text */
+      var speed = 200; /* The speed/duration of the effect in milliseconds */
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("mainlogo_text").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      typeWriter()
+    </script>
+  </body>
+</html>
