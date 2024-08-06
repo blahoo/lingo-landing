@@ -1,2 +1,0 @@
-"# landingsite" 
-"# lingo-landing" 
